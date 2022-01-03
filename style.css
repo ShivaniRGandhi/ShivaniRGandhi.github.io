@@ -23,7 +23,7 @@ img {
 }
 
 body{ /* gradient covers entire page*/
-    background-image:linear-gradient(#8398B0,black);
+    background-image:linear-gradient(#e4e5e6,#00416a);
     background-repeat: no-repeat;
     height: 100%;
     margin: 0;
@@ -561,7 +561,7 @@ a.active {
     padding: 0 30px;
     font-size: 12px;
     color: white;
-    background: linear-gradient(to bottom right,black,#5fc3e4);
+    background-image:linear-gradient(#8fbae5,#00416a);
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
@@ -772,7 +772,7 @@ End Experience Section */
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background: linear-gradient(black,#5fc3e4);
+    background-image:linear-gradient(#8fbae5,#00416a);
 	color: white;
 }
 #jobs .job-info h1 {
@@ -935,7 +935,7 @@ End Experience Section */
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background: linear-gradient(black,#5fc3e4);
+    background-image:linear-gradient(#8fbae5,#00416a);
 	color: white;
 }
 #projects .project-info h1 {
@@ -1009,6 +1009,8 @@ End Experience Section */
 	flex-direction: column;
 	box-shadow: 0px 0px 18px 0 #0000002c;
 	transition: 0.3s ease box-shadow;
+    background-color: #00416a;
+
 }
 #contact .contact-item:hover {
 	box-shadow: 0px 0px 5px 0 #0000002c;
@@ -1052,9 +1054,18 @@ End Experience Section */
 /* End Footer */
 
 
-
-
 /*keyframes*/
+
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
 @keyframes text_reveal_box {
 	50% {
 		width: 100%;
@@ -1076,10 +1087,7 @@ End Experience Section */
 /*end keyframes*/
 
 @media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.5rem;
-		padding: 20px 60px;
-	}
+
 	h1.section-title {
 		font-size: 6rem;
 	}
@@ -1117,56 +1125,6 @@ End Experience Section */
     }
 	/* End Hero */
 
-	/* Services Section */
-	#services .service-bottom .service-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
-	/* End Services Section */
-
-
-     /* Experience */
-	#jobs .job-item {
-		flex-direction: row;
-	}
-	#jobs .job-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#jobs .job-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#jobs .all-jobs .job-info {
-		height: 100%;
-	}
-	#jobs .all-jobs .jobs-img {
-		height: 100%;
-	}
-	/* End Experience */
-
-    /* Project */
-	#projects .project-item {
-		flex-direction: row;
-	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .project-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#projects .all-projects .project-info {
-		height: 100%;
-	}
-	#projects .all-projects .project-img {
-		height: 100%;
-	}
-	/* End Project */
-
 	/* About */
 	#about .about {
 		flex-direction: row;
@@ -1192,6 +1150,48 @@ End Experience Section */
 	}
 	/* End About */
 
+     /* Experience */
+	#jobs .job-item {
+		flex-direction: row;
+	}
+	#jobs .job-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#jobs .job-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#jobs .all-jobs .job-info {
+		height: 100%;
+	}
+	#jobs .all-jobs .job-img {
+		height: 100%;
+	}
+	/* End Experience */
+
+	/* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+	/* End Project */
+
 	/* contact  */
 	#contact .contact {
 		flex-direction: column;
@@ -1212,18 +1212,7 @@ End Experience Section */
 		margin: 0;
 		flex-direction: row;
 	}
-	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
-	#contact .contact-item .contact-info {
-		width: 100%;
-		text-align: left;
-		padding-left: 20px;
-	}
+
 	/* End contact  */
 }
 /* End Media Query For Tablet */
@@ -1285,11 +1274,6 @@ End Experience Section */
         animation: text_reveal 1s ease forwards;
         animation-delay: 1.9s;
     }
-
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
 }
 /* End  Media Query For Desktop */
 
