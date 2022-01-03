@@ -16,23 +16,7 @@
 <body>
 
   <!-- Navigation 
-  <script>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    window.onscroll = function() {myFunction()};
-    
-    var navbar = document.getElementById("myTopnav");
-    var sticky = navbar.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-    </script>-->
 <header>
       <a href="#" class="logo">Shivani Gandhi</a>
       <ul>
@@ -51,8 +35,33 @@
       </script>
    </div>
   </section>
+End Navigation-->
 
-  <!-- End Navigation-->
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>S</span>hivani <span>G</span>andhi</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Welcome</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#jobs" data-after="Service">Experience</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
 
     <!-- hero section (main entry lolz)--> 
     <section id="hero">
@@ -212,7 +221,7 @@
   </section>
 
     <!-- End Contact section-->
-
+<script src="./app.js"></script>
 </body>
 </html>
 
