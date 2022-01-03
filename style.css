@@ -23,7 +23,7 @@ img {
 }
 
 body{ /* gradient covers entire page*/
-    background-image:linear-gradient(#8398B0,#0072ff);
+    background-image:linear-gradient(#8398B0,black);
     background-repeat: no-repeat;
     height: 100%;
     margin: 0;
@@ -39,8 +39,8 @@ p{
     display: block;
     width: fit-content;
     font-family: "Montserrat";
-    font-weight: lighter ;
     font-size: 15px;
+    color: white;
 }
 
 .cover {
@@ -53,21 +53,18 @@ p{
 
 .section-title {
 	font-size: 4rem;
-	font-weight: 300;
+    font-weight: bold;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
-	text-align: center;
     display: block;
     width: fit-content;
     font-size: 4rem;
     font-family: "Montserrat";
     margin: 0;
-    font-weight: bold;
-    text-align: left;
+    text-align: center;
     position: relative;
-    color: white;
 }
 
 .container{
@@ -79,7 +76,7 @@ p{
 }
 
 hr {
-    border: 50px solid black;
+    border: 5px solid black;
     margin: 0;
     width: 100%;
   }
@@ -303,10 +300,10 @@ a.active {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: white;
+	color: #8398B0;
 }
 .brand h1 span {
-	color: black;
+	color: white;
 }
 
 /* Header section */
@@ -449,19 +446,20 @@ a.active {
 
 #hero{
     background-image: url(./img/MainImg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-size: cover;
+	background-position: top center;
+	position: relative;
 }
 
 #hero h1{
     display: block;
     width: fit-content;
-    font-size: 8rem;
+    position: relative;
+    font-size: 4rem;
+    letter-spacing: .2rem;
     font-family: "Montserrat";
     margin: 0;
     font-weight: bold;
-    position: relative;
     color: transparent;
     animation: text_reveal 1s ease forwards;
     animation-delay: 1s;
@@ -481,7 +479,7 @@ a.active {
 #hero h2{
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: "Montserrat";
     font-weight: lighter;
     position: relative;
@@ -502,9 +500,95 @@ a.active {
 	animation-delay: 1.5s;
 }
 
+#hero h1:nth-child(1) {
+	animation-delay: 1s;
+}
+#hero h1:nth-child(2) {
+	animation-delay: 2s;
+}
+
+#hero h1:nth-child(1) span {
+	animation-delay: 0.5s;
+}
+#hero h1:nth-child(2) span {
+	animation-delay: 1.5s;
+}
+
 /* End Hero Section */
 
-/* About Section      background-image: url(./img/College.jpg);*/
+/* About Section */
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#about .col-left {
+	width: 300px;
+	height: 400px;
+}
+#about .col-right {
+	width: 100%;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+    color: white;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-left .about-img {
+    margin-top: auto;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-radius: 5px;
+}
+
+.m-btn {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px;
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(to bottom right,black,#5fc3e4);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    text-decoration: none !important;
+    margin-bottom: 20px;
+}
+
+#about .col-left .about-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid black;
+	z-index: -1;
+}
+/* End About Section */
+
+/* About Section     
 
 #about .about{
     max-width: 1200px;
@@ -557,25 +641,7 @@ a.active {
     color: white;
 }
 
-.m-btn {
-    height: 45px;
-    line-height: 45px;
-    padding: 0 30px;
-    font-size: 12px;
-    color: white;
-    background: linear-gradient(to bottom right,#0072ff,#5fc3e4);
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    display: inline-block;
-    text-decoration: none !important;
-}
+
 /* End About Section */
 
 
@@ -621,7 +687,7 @@ a.active {
     justify-content: center;
     flex-direction: column;
     color: white;
-    background-image: linear-gradient(#0072ff,#5fc3e4)
+    background-image: linear-gradient(black,#5fc3e4)
 }
 
 #jobs .job-info h1{
@@ -713,7 +779,7 @@ a.active {
     justify-content: center;
     flex-direction: column;
     color: white;
-    background-image: linear-gradient(#0072ff,#5fc3e4)
+    background-image: linear-gradient(black,#5fc3e4)
 
 }
 
@@ -761,18 +827,7 @@ a.active {
 	transform: scale(1.1);
 }
 
-#projects hr{
-    position: absolute;
-    width: 1197px;
-    height: 0px;
-    left: 122px;
-    top: 1842px;
 
-    border: 1px solid rgba(255, 255, 255, 0.925);
-    transform: rotate(0.14deg);
-    margin-bottom: 100px;
-
-}
 
 /* End Project Section */
 
@@ -886,6 +941,33 @@ a.active {
 	#hero h1 {
 		font-size: 7rem;
 	}
+
+    #hero h1{
+        display: block;
+        width: fit-content;
+        position: relative;
+        letter-spacing: .2rem;
+        font-size: 4rem;
+        font-family: "Montserrat";
+        margin: 0;
+        font-weight: bold;
+        color: transparent;
+        animation: text_reveal 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    #hero h2{
+        display: block;
+        width: fit-content;
+        font-size: 2rem;
+        font-family: "Montserrat";
+        font-weight: lighter;
+        position: relative;
+        color: transparent; 
+        margin: 0;
+        animation: text_reveal 1s ease forwards;
+        animation-delay: 1.9s;
+    }
 	/* End Hero */
 
 	/* Services Section */
@@ -944,7 +1026,7 @@ a.active {
 	}
 	#about .col-left {
 		width: 600px;
-		height: 400px;
+		height: 600px;
 		padding-left: 60px;
 	}
 	#about .about .col-left .about-img::after {
@@ -952,7 +1034,7 @@ a.active {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson;
+		border: 10px solid black;
 	}
 	#about .col-right {
 		text-align: left;
@@ -1022,6 +1104,40 @@ a.active {
 		display: none;
 	}
 	/* End header */
+
+    #hero{
+        background-image: url(./img/MainImg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    #hero h1{
+        display: block;
+        width: fit-content;
+        position: relative;
+        letter-spacing: .2rem;
+        font-size: 8rem;
+        font-family: "Montserrat";
+        margin: 0;
+        font-weight: bold;
+        color: transparent;
+        animation: text_reveal 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    #hero h2{
+        display: block;
+        width: fit-content;
+        font-size: 4rem;
+        font-family: "Montserrat";
+        font-weight: lighter;
+        position: relative;
+        color: transparent; 
+        margin: 0;
+        animation: text_reveal 1s ease forwards;
+        animation-delay: 1.9s;
+    }
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
