@@ -38,8 +38,8 @@ p{
     display: block;
     width: fit-content;
     font-family: "Montserrat";
-    font-weight: lighter ;
     font-size: 15px;
+    color: white;
 }
 
 .cover {
@@ -57,14 +57,13 @@ p{
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
-	text-align: center;
     display: block;
     width: fit-content;
     font-size: 4rem;
     font-family: "Montserrat";
     margin: 0;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     position: relative;
     color: white;
 }
@@ -183,10 +182,10 @@ a.active {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: white;
+	color: #8398B0;
 }
 .brand h1 span {
-	color: black;
+	color: white;
 }
 
 /* Header section */
@@ -337,11 +336,11 @@ a.active {
 #hero h1{
     display: block;
     width: fit-content;
+    position: relative;
     font-size: 8rem;
     font-family: "Montserrat";
     margin: 0;
     font-weight: bold;
-    position: relative;
     color: transparent;
     animation: text_reveal 1s ease forwards;
     animation-delay: 1s;
@@ -382,9 +381,95 @@ a.active {
 	animation-delay: 1.5s;
 }
 
+#hero h1:nth-child(1) {
+	animation-delay: 1s;
+}
+#hero h1:nth-child(2) {
+	animation-delay: 2s;
+}
+
+#hero h1:nth-child(1) span {
+	animation-delay: 0.5s;
+}
+#hero h1:nth-child(2) span {
+	animation-delay: 1.5s;
+}
+
 /* End Hero Section */
 
-/* About Section      background-image: url(./img/College.jpg);*/
+/* About Section */
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#about .col-left {
+	width: 300px;
+	height: 400px;
+}
+#about .col-right {
+	width: 100%;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+    color: white;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-left .about-img {
+    margin-top: auto;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-radius: 5px;
+}
+
+.m-btn {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px;
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(to bottom right,#0072ff,#5fc3e4);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    text-decoration: none !important;
+    margin-bottom: 20px;
+}
+
+#about .col-left .about-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid black;
+	z-index: -1;
+}
+/* End About Section */
+
+/* About Section     
 
 #about .about{
     max-width: 1200px;
@@ -437,25 +522,7 @@ a.active {
     color: white;
 }
 
-.m-btn {
-    height: 45px;
-    line-height: 45px;
-    padding: 0 30px;
-    font-size: 12px;
-    color: white;
-    background: linear-gradient(to bottom right,#0072ff,#5fc3e4);
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    display: inline-block;
-    text-decoration: none !important;
-}
+
 /* End About Section */
 
 
@@ -803,7 +870,7 @@ a.active {
 	}
 	#about .col-left {
 		width: 600px;
-		height: 400px;
+		height: 600px;
 		padding-left: 60px;
 	}
 	#about .about .col-left .about-img::after {
@@ -811,7 +878,7 @@ a.active {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson;
+		border: 10px solid black;
 	}
 	#about .col-right {
 		text-align: left;
