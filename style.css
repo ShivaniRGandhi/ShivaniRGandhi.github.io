@@ -23,7 +23,7 @@ img {
 }
 
 body{ /* gradient covers entire page*/
-    background-image:linear-gradient(#e4e5e6,#00416a);
+    background-image:linear-gradient(#8398B0,#00416a);
     background-repeat: no-repeat;
     height: 100%;
     margin: 0;
