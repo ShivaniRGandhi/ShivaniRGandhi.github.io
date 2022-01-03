@@ -441,7 +441,7 @@ a.active {
     padding: 0 30px;
     font-size: 12px;
     color: white;
-    background: linear-gradient(to bottom right,#0072ff,#5fc3e4);
+    background: linear-gradient(to bottom right,black,#5fc3e4);
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
@@ -567,7 +567,7 @@ a.active {
     justify-content: center;
     flex-direction: column;
     color: white;
-    background-image: linear-gradient(#0072ff,#5fc3e4)
+    background-image: linear-gradient(black,#5fc3e4)
 }
 
 #jobs .job-info h1{
@@ -659,7 +659,7 @@ a.active {
     justify-content: center;
     flex-direction: column;
     color: white;
-    background-image: linear-gradient(#0072ff,#5fc3e4)
+    background-image: linear-gradient(black,#5fc3e4)
 
 }
 
