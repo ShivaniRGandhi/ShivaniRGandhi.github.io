@@ -98,7 +98,7 @@ hr {
 }
 .cta:hover {
 	color: white;
-	background-color: crimson;
+	background-color: black;
 }
 
 /* Navigation Section
@@ -769,12 +769,12 @@ a.active {
 	}
 	/* End Hero */
 
-	/* Services Section */
-	#services .service-bottom .service-item {
+	/* Experience Section */
+	#experiences .experience-bottom .experience-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Services Section */
+	/* End experiences Section */
 
 	/* Project */
 	#projects .project-item {
@@ -882,7 +882,7 @@ a.active {
 	}
 	/* End header */
 
-	#services .service-bottom .service-item {
+	#experiences .experience-bottom .experience-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
