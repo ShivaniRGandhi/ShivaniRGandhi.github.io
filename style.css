@@ -645,7 +645,7 @@ a.active {
 /* End About Section */
 
 
-/* Experience Section */
+/* Experience Section 
 
 #jobs .jobs{
     flex-direction: column;
@@ -736,9 +736,81 @@ a.active {
 	transform: scale(1.1);
 }
 
-/* End Experience Section */
+End Experience Section */
 
-/* Projects Section */
+/* Experience section */
+#jobs .jobs {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#jobs .jobs-header h1 {
+	margin-bottom: 50px;
+}
+#jobs .all-jobs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#jobs .job-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#jobs .job-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background: linear-gradient(black,#5fc3e4);
+	color: white;
+}
+#jobs .job-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#jobs .job-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#jobs .job-info p {
+	color: white;
+}
+#jobs .job-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#jobs .job-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+
+}
+#jobs .job-img img {
+	transition: 0.3s ease transform;
+}
+#jobs .job-item:hover .job-img img {
+	transform: scale(1.1);
+}
+/* End Experience section */
+
+/* Projects Section 
 
 #projects .projects{
     flex-direction: column;
@@ -827,9 +899,79 @@ a.active {
 	transform: scale(1.1);
 }
 
-
-
 /* End Project Section */
+
+/* Projects section */
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background: linear-gradient(black,#5fc3e4);
+	color: white;
+}
+#projects .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#projects .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-info p {
+	color: white;
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+
+}
+#projects .project-img img {
+	transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+/* End Projects section */
 
 /* Contact  Section */
 
